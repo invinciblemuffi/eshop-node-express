@@ -1,0 +1,19 @@
+{
+  "name": "eshop-express",
+  "version": "1.0.0",
+  "description": "E-Shop made with Express and EJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Mufaddal B",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
