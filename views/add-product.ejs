@@ -4,10 +4,26 @@
             <h2>Add your products</h2>
             <form action="/product/addProduct" method="post">
                 <div class="form-control">
+                    <input type="file" accept="image/*" name="prodImg" id="prodImg" class="d-none" />
+                    <img id="outputImg" width="250" />
+                    <label for="prodImg" id="prodImgLabel">Upload Image</label>
+                </div>
+                <div class="form-control">
                     <label for="prodName">Product Name:</label>
                     <input type="text" name="prodName" id="prodName" />
+                </div>
+                <div class="form-control">
+                    <label for="prodPrice">Product Price:</label>
+                    <input type="number" name="prodPrice" id="prodPrice" />
                 </div>
                 <button type="submit">Add</button>
             </form>
         </div>
+        <script>
+            const imgEl = document.getElementById("prodImg");
+            imgEl.addEventListener("change", (e) => {
+                const outputImgEl = document.getElementById("outputImg");
+                outputImgEl.src = URL.createObjectURL(e.target.files[0]);
+            });
+        </script>
         <%- include('./includes/end.ejs') %>

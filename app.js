@@ -1,7 +1,7 @@
-const path = require("path");
 const express = require("express");
 
 const adminRouter = require("./routes/admin");
+const shopRouter = require("./routes/shop");
 
 const port = process.env.PORT || 5000;
 const app = express();
@@ -12,6 +12,7 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use(shopRouter);
 app.use("/product", adminRouter);
 
 // Fallback route or 404 handler

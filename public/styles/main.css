@@ -91,3 +91,27 @@ button[type="submit"] {
   border: none;
   cursor: pointer;
 }
+
+#prodImgLabel {
+  display: block;
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
+
+.card {
+  background-color: white;
+  width: 20%;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.homePage {
+  text-align: center;
+  margin: 1.5rem;
+}
