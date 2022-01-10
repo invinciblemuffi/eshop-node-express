@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background-color: rebeccapurple;
+  padding: 0.75rem;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: whitesmoke;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.75rem 1rem;
+}
+
+a:hover,
+a:active {
+  background-color: tomato;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 1.75rem;
+  color: gray;
+  margin-top: 10rem;
+  margin-bottom: 0;
+}

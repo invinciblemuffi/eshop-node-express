@@ -1,0 +1,13 @@
+<%- include('./includes/head.ejs') %>
+    <%- include('./includes/navigation.ejs') %>
+        <div class="add-product">
+            <h2>Add your products</h2>
+            <form action="/add-product">
+                <div>
+                    <label for="prodName">Product Name</label>
+                    <input type="text" name="prodName" id="prodName" />
+                </div>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <%- include('./includes/end.ejs') %>

@@ -1,0 +1,20 @@
+const path = require("path");
+const express = require("express");
+
+const adminRouter = require("./routes/admin");
+
+const port = process.env.PORT || 5000;
+const app = express();
+
+// app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+app.use(express.static("public"));
+
+app.use("/product", adminRouter);
+
+// Fallback route or 404 handler
+app.use((req, res) => {
+  res.status(404).render("404", { pageTitle: "Not Found!" });
+});
+
+app.listen(port, () => console.log(`Listening on ${port}`));
