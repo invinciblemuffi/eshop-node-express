@@ -36,10 +36,58 @@ a:active {
   background-color: tomato;
 }
 
+header h1 a:active,
+header h1 a:hover {
+  background-color: transparent;
+}
+
 .not-found {
   text-align: center;
   font-size: 1.75rem;
   color: gray;
   margin-top: 10rem;
   margin-bottom: 0;
+}
+
+.add-product {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.add-product h2 {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.add-product form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-control {
+  padding: 1rem;
+  width: 100%;
+}
+
+.form-control label {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  color: gray;
+  font-size: 15px;
+}
+
+.form-control input {
+  border: 1px solid rebeccapurple;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+button[type="submit"] {
+  margin: 0 0 0 1rem;
+  width: 86%;
+  padding: 0.75rem;
+  color: whitesmoke;
+  background: rebeccapurple;
+  border: none;
+  cursor: pointer;
 }
