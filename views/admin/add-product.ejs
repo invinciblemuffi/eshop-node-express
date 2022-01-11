@@ -1,5 +1,5 @@
-<%- include('./includes/head.ejs') %>
-    <%- include('./includes/navigation.ejs') %>
+<%- include('../includes/head.ejs') %>
+    <%- include('../includes/navigation.ejs') %>
         <div class="add-product">
             <h2>Add your products</h2>
             <form action="/product/addProduct" method="post">
@@ -26,4 +26,4 @@
                 outputImgEl.src = URL.createObjectURL(e.target.files[0]);
             });
         </script>
-        <%- include('./includes/end.ejs') %>
+        <%- include('../includes/end.ejs') %>
