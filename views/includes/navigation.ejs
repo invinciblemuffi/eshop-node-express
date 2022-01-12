@@ -2,8 +2,18 @@
     <nav>
         <h1><a href="/">EShop</a></h1>
         <ul>
-            <li><a href="/product/add-product">Add Product</a></li>
-            <li><a href="/">Shop Products</a></li>
+            <li>
+                <a href="/" class="<%= path === '/' ? 'active' : '' %>">Shop Products</a>
+            </li>
+            <li>
+                <a href="/products" class="<%= path === '/products' ? 'active' : '' %>">Products</a>
+            </li>
+            <li>
+                <a href="/cart" class="<%= path === '/cart' ? 'active' : '' %>">Cart</a>
+            </li>
+            <li>
+                <a href="/admin/add-product" class="<%= path === '/admin/add-product' ? 'active' : ''%>">Add Product</a>
+            </li>
         </ul>
     </nav>
 </header>

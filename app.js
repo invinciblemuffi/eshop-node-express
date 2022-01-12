@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(shopRouter);
-app.use("/product", adminRouter);
+app.use("/admin", adminRouter);
 
 // Fallback route or 404 handler
 app.use((req, res) => {

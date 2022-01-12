@@ -33,12 +33,21 @@ a {
 
 a:hover,
 a:active {
-  background-color: tomato;
+  color: tomato;
+}
+
+a:hover.active,
+a:active.active {
+  color: whitesmoke;
 }
 
 header h1 a:active,
 header h1 a:hover {
   background-color: transparent;
+}
+
+.active {
+  background-color: tomato;
 }
 
 .not-found {
