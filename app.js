@@ -17,7 +17,7 @@ app.use("/admin", adminRouter);
 
 // Fallback route or 404 handler
 app.use((req, res) => {
-  res.status(404).render("404", { pageTitle: "Not Found!" });
+  res.status(404).render("404", { pageTitle: "Not Found!", path: "*" });
 });
 
 app.listen(port, () => console.log(`Listening on ${port}`));

@@ -11,7 +11,7 @@ exports.postAddProduct = (req, res) => {
 };
 
 exports.getAdminProducts = (req, res) => {
-  res.render("/admin/products-admin", {
+  res.render("admin/products-admin", {
     pageTitle: "Admin Products",
     path: "/admin/products",
   });
