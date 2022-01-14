@@ -1,3 +1,22 @@
 <%- include('../includes/head.ejs') %>
     <%- include('../includes/navigation.ejs') %>
+        <div class="homePage">
+            <h2>All Products</h2>
+            <div class="productList">
+                <div class="card">
+                    <div>
+                        <img src="https://media.istockphoto.com/photos/wooden-bookshelves-filled-with-books-picture-id1265077901?b=1&k=20&m=1265077901&s=170667a&w=0&h=LBfpUBQC8lwaURRu_3N5H9OQKmKo8kXddLSVCtqJrgc="
+                            alt="" width="200">
+                    </div>
+                    <p>Book Name</p>
+                    <p>Book Amount</p>
+                    <div class="action-btns">
+                        <a href="/admin/edit-product" class="btn">Edit</a>
+                        <form action="/admin/delete-product" method="post">
+                            <button type="submit" class="btn">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <%- include('../includes/end.ejs') %>
