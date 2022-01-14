@@ -7,5 +7,12 @@ exports.getAddProduct = (req, res) => {
 
 exports.postAddProduct = (req, res) => {
   console.log(req.body);
-  res.redirect(302, "/");
+  res.redirect("/");
+};
+
+exports.getAdminProducts = (req, res) => {
+  res.render("/admin/products-admin", {
+    pageTitle: "Admin Products",
+    path: "/admin/products",
+  });
 };

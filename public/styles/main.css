@@ -44,6 +44,7 @@ a:active.active {
 header h1 a:active,
 header h1 a:hover {
   background-color: transparent;
+  color: whitesmoke;
 }
 
 .active {
